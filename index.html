@@ -101,7 +101,7 @@
                     <div class="discord-status-dot"></div>
                 </div>
                 <div class="discord-info">
-                    <div class="nameplate-wrap">
+                    <div class="nams">
                         <h1 class="username">@180_hz</h1>
                         <a href="#" target="_blank" class="server-tag" title="Asus">
                             <img src="images/kupa.png" alt="Asus">
@@ -356,7 +356,7 @@ setTimeout(typewriter, 1000);
 
 
 
-const DISCORD_USER_ID = '840358771830030348';
+const DISCORD_USER_ID = 'idk';
 
 async function updateDiscordWidget() {
     try {
@@ -370,7 +370,7 @@ async function updateDiscordWidget() {
             const username = widget?.querySelector('.discord-info .username');
             const activity = widget?.querySelector('.discord-info .activity');
             if (username) username.textContent = `Error ${response.status}`;
-            if (activity) activity.textContent = 'Failed to load presence';
+            if (activity) activity.textContent = 'Currently Doing Nothing..';
             return;
         }
 
